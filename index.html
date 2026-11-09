@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>煦序工作室｜讓行政有秩序</title>
+<meta name="description" content="出道 3 年的行政助理煦恩，用 AI 和制度把麻煩的行政工作變成工具。作品集、行政小技巧與免費範本。">
+<meta property="og:title" content="煦序工作室｜讓行政有秩序">
+<meta property="og:description" content="用 AI 和制度，把麻煩的事變成工具。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root{
+    --sun:#E8963C; --sun-soft:#FBEBD8; --ink:#2B2A28; --muted:#6B675F;
+    --paper:#FFFCF7; --line:#E9E2D6; --grid:#F3ECE1;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"PingFang TC","Noto Sans TC",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.75}
+  a{color:inherit}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);background:rgba(255,252,247,.92);position:sticky;top:0;backdrop-filter:blur(6px);z-index:5}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.08em;text-decoration:none}
+  .mark{width:26px;height:26px;border:2.5px solid var(--ink);position:relative;flex:none}
+  .mark::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--sun);top:3px;right:3px}
+  nav a{margin-left:20px;font-size:15px;text-decoration:none;color:var(--muted)}
+  nav a:hover{color:var(--ink)}
+  .hero{padding:88px 0 72px;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+  .hero small{display:inline-block;background:var(--sun-soft);color:#9A5A16;padding:4px 12px;border-radius:999px;font-size:14px}
+  .hero h1{font-size:44px;line-height:1.3;margin:18px 0 14px;letter-spacing:.04em}
+  .hero h1 span{color:var(--sun)}
+  .hero p{font-size:18px;color:var(--muted);max-width:560px;margin:0 0 28px}
+  .btn{display:inline-block;padding:11px 22px;border:2px solid var(--ink);text-decoration:none;font-weight:600;margin:0 10px 10px 0}
+  .btn.primary{background:var(--ink);color:#fff}
+  .btn.sun{background:var(--sun);border-color:var(--sun);color:#fff}
+  section{padding:64px 0;border-top:1px solid var(--line)}
+  h2{font-size:26px;margin:0 0 8px;letter-spacing:.05em}
+  .lead{color:var(--muted);margin:0 0 28px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .card{background:#fff;border:1px solid var(--line);padding:22px;position:relative}
+  .card::before{content:"";position:absolute;left:0;top:0;width:36px;height:4px;background:var(--sun)}
+  .card h3{margin:8px 0 8px;font-size:19px}
+  .card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+  .card .status{font-size:13px;color:#9A5A16}
+  .tag{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:2px 8px;margin-right:6px;white-space:nowrap}
+  .work{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);padding:28px;margin-bottom:20px}
+  .shot{aspect-ratio:4/3;border:1px solid var(--line);overflow:hidden;position:relative;background:var(--grid)}
+  .shot iframe{position:absolute;top:0;left:0;width:200%;height:200%;border:0;transform:scale(.5);transform-origin:0 0;pointer-events:none}
+  .work dl{margin:0 0 18px}
+  .work dt{font-weight:700;font-size:14px;color:#9A5A16;margin-top:10px}
+  .work dd{margin:2px 0 0;color:var(--muted);font-size:15px}
+  .hire{margin-top:28px;background:var(--sun-soft);border:1px solid #F2D2AE;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .hire h3{margin:0 0 4px;font-size:20px}
+  .hire p{margin:0;color:#7A5A36;font-size:15px}
+  .soon{opacity:.6}
+  .about{display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:start}
+  .avatar{width:120px;height:120px;border:5px solid var(--ink);position:relative;background:#fff}
+  .avatar::after{content:"";position:absolute;width:46px;height:46px;border-radius:50%;background:var(--sun);top:14px;right:14px}
+  footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer a{margin-left:14px}
+  @media (max-width:700px){
+    .hero h1{font-size:32px} nav a{margin-left:12px;font-size:14px}
+    .work,.about{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#"><span class="mark"></span>煦序工作室</a>
+  <nav><a href="#works">作品</a><a href="#tips">小技巧</a><a href="#free">範本</a><a href="#about">關於</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <small>行政人 × AI × 制度</small>
+  <h1>讓行政<span>有秩序</span>，<br>把麻煩的事變成工具。</h1>
+  <p>我是煦恩，出道 3 年的行政助理。這裡放我用 AI 和制度做出來的小工具、範本，還有每週一個行政小技巧。</p>
+  <a class="btn primary" href="#works">看作品</a><a class="btn" href="#hire">提出需求</a>
+</div></div>
+
+<section id="works"><div class="wrap">
+  <h2>作品</h2>
+  <p class="lead">從真實的工作情境出發，把手算、手抄、反覆整理的事，做成可以直接用的工具。</p>
+
+  <div class="work">
+    <div class="shot"><iframe src="works/pinkuang/" title="品況操作畫面預覽" loading="lazy" tabindex="-1"></iframe></div>
+    <div>
+      <span class="tag">Excel 替代</span><span class="tag">品質紀錄</span>
+      <h3 style="font-size:22px;margin:12px 0 4px">品況｜機台品質紀錄</h3>
+      <dl>
+        <dt>問題</dt><dd>工廠用 Excel 記十幾台機台的不良數，每週要手動整理才看得出哪台出狀況。</dd>
+        <dt>做法</dt><dd>輸入生產數和不良數，自動算出不良率，可以切換單日和本週、依機台篩選。</dd>
+        <dt>狀態</dt><dd>可操作雛形，示範資料皆為虛構。</dd>
+      </dl>
+      <a class="btn primary" href="works/pinkuang/">試用看看</a>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <span class="tag">手機 App</span><span class="tag">薪資計算</span>
+      <h3>工時薪資簿｜XX工程行</h3>
+      <p>老闆原本要把員工傳到 LINE 的工時一筆筆手算。現在用手機講一句話就能記工，自動算日薪、加班和借款，半個月一鍵結算，明細直接傳到 LINE。</p>
+      <span class="status">● 實際使用中（因含真實資料，不開放試用）</span>
+    </div>
+    <div class="card">
+      <span class="tag">資料自動化</span><span class="tag">電腦＋手機</span>
+      <h3>慢股快篩｜台股篩選與觀察</h3>
+      <p>每晚自動抓證交所的公開資料，依自己訂的規則篩選、分區列出，手機也能看，還會提醒觀察中的股票有什麼變化。</p>
+      <span class="status">● 自用中（規則對照工具，不是投資建議）</span>
+    </div>
+    <div class="card soon">
+      <h3>下一件作品</h3>
+      <p>每 2–3 週新增一件。</p>
+    </div>
+  </div>
+
+  <div class="hire" id="hire">
+    <div>
+      <h3>接案中，歡迎提出需求</h3>
+      <p>手上有一直手算、手抄、每次都要重新整理的工作嗎？寫信聊聊，看看能不能變成工具。</p>
+    </div>
+    <a class="btn sun" href="mailto:xusquarestudio@gmail.com?subject=%E9%9C%80%E6%B1%82%E6%B4%BD%E8%A9%A2">寫信給我</a>
+  </div>
+</div></section>
+
+<section id="tips"><div class="wrap">
+  <h2>行政小技巧</h2>
+  <p class="lead">每週一則，Threads 和 IG 同步發。</p>
+  <div class="grid">
+    <div class="card"><span class="tag">第 1 週</span><h3>讓別人一次問清楚</h3><p>給來問問題的人一個四格範本，來回次數少很多。</p><span class="status">11/16 起發布</span></div>
+    <div class="card"><span class="tag">第 2 週</span><h3>請示信這樣寫，主管看完就能回</h3><p>把開放題變成選擇題，五個步驟。</p></div>
+    <div class="card"><span class="tag">第 3 週</span><h3>會議短一半的祕密</h3><p>會前先發一頁，開會只做決定。</p></div>
+  </div>
+</div></section>
+
+<section id="free"><div class="wrap">
+  <h2>免費範本</h2>
+  <p class="lead">直接下載就能用，不用註冊。</p>
+  <div class="grid">
+    <div class="card soon"><span class="tag">12 月上線</span><h3>提問／申請範本</h3><p>貼在群組記事本或信件裡，讓大家一次把問題講清楚。</p></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <div class="avatar" role="img" aria-label="煦序工作室標誌"></div>
+  <div>
+    <h2>關於煦恩</h2>
+    <p>出道 3 年的行政助理，每天的工作是資料、會議、排程和一大堆訊息。我喜歡把重複的事整理成制度，再用 AI 讓它跑得更快。</p>
+    <p>煦序工作室是我的實驗：把這些方法分享出來，也把它們做成別人能直接用的工具。</p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© 2026 煦序工作室</span>
+  <span><a href="https://www.instagram.com/xusquare.studio/">Instagram</a><a href="https://www.threads.com/@xusquare.studio">Threads</a><a href="mailto:xusquarestudio@gmail.com">Email</a></span>
+</div></footer>
+</body>
+</html>
