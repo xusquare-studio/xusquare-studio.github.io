@@ -19,7 +19,7 @@
   .wrap{max-width:960px;margin:0 auto;padding:0 24px}
   header{border-bottom:1px solid var(--line);background:rgba(255,252,247,.92);position:sticky;top:0;backdrop-filter:blur(6px);z-index:5}
   header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-  .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.08em;text-decoration:none}
+  .logo{white-space:nowrap;display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.08em;text-decoration:none}
   .mark{width:26px;height:26px;border:2.5px solid var(--ink);position:relative;flex:none}
   .mark::after{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--sun);top:3px;right:3px}
   nav a{margin-left:20px;font-size:15px;text-decoration:none;color:var(--muted)}
@@ -62,6 +62,8 @@
     .hero h1{font-size:32px} nav a{margin-left:12px;font-size:14px}
     .work,.about{grid-template-columns:1fr}
   }
+  @media (max-width:480px){.wrap{padding:0 18px} nav a{margin-left:10px;font-size:13px} .logo{gap:8px}}
+  @media (max-width:380px){nav{display:none}}
 </style>
 </head>
 <body>
