@@ -40,6 +40,7 @@
   .card::before{content:"";position:absolute;left:0;top:0;width:36px;height:4px;background:var(--sun)}
   .card h3{margin:8px 0 8px;font-size:19px}
   .card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+  .cardimg{display:block;width:calc(100% + 44px);margin:-22px -22px 16px;aspect-ratio:4/3;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:var(--grid)}
   .card .status{font-size:13px;color:#9A5A16}
   .tag{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:2px 8px;margin-right:6px;white-space:nowrap}
   .work{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);padding:28px;margin-bottom:20px}
@@ -76,7 +77,7 @@
   <small>行政人 × AI × 制度</small>
   <h1>讓行政<span>有秩序</span>，<br>把麻煩的事變成工具。</h1>
   <p>我是煦恩，出道 3 年的行政助理。這裡放我用 AI 和制度做出來的小工具、範本，還有每週一個行政小技巧。</p>
-  <a class="btn primary" href="#works">看作品</a><a class="btn" href="#hire">歡迎洽詢</a>
+  <a class="btn primary" href="#works">看作品</a><a class="btn" href="#hire">提出需求</a>
 </div></div>
 
 <section id="works"><div class="wrap">
@@ -99,12 +100,14 @@
 
   <div class="grid">
     <div class="card">
+      <img class="cardimg" src="img/pay.jpg" alt="工時薪資簿手機畫面（範例資料）" loading="lazy">
       <span class="tag">手機 App</span><span class="tag">薪資計算</span>
       <h3>工時薪資簿｜XX工程行</h3>
       <p>老闆原本要把員工傳到 LINE 的工時一筆筆手算。現在用手機講一句話就能記工，自動算日薪、加班和借款，半個月一鍵結算，明細直接傳到 LINE。</p>
-      <span class="status">● 實際使用中（因含真實資料，不開放試用）</span>
+      <span class="status">● 實際使用中（因含真實資料，不開放試用；畫面為範例資料）</span>
     </div>
     <div class="card">
+      <img class="cardimg" src="img/stock.jpg" alt="慢股快篩報表畫面（已隱藏個人資料）" loading="lazy">
       <span class="tag">資料自動化</span><span class="tag">電腦＋手機</span>
       <h3>慢股快篩｜台股篩選與觀察</h3>
       <p>每晚自動抓證交所的公開資料，依自己訂的規則篩選、分區列出，手機也能看，還會提醒觀察中的股票有什麼變化。</p>
